@@ -9,7 +9,6 @@ namespace ViewModels.API.F_D0047_61
     // F-D0047-61
     public class mF_D0047_61
     {
-        // sucess
         public string sucess { get; set; }
 
         public mResult result { get; set; }

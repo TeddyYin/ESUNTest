@@ -13,8 +13,6 @@ namespace ESUNTest_API.Controllers
 {
     public class F_D0047_61Controller : BaseController
     {
-        private ESUNTestContext db = new ESUNTestContext();
-
         #region -- GET: api/F_D0047_61 --
         /// <summary>
         /// api/F_D0047_61
@@ -22,7 +20,7 @@ namespace ESUNTest_API.Controllers
         /// <returns>mF_D0047_61</returns>
         public IHttpActionResult GetF_D0047_61()
         {
-            string sUrl = sApiAddress + sAuthorization + "&elementName=Td&limit=1&locationName=文山區&timeFrom=2021-02-26T00%3A00%3A00&timeTo=2021-02-26T09%3A00%3A00";
+            string sUrl = sApiAddress + sAuthorization + "&elementName=Td&limit=3&locationName=文山區";
 
             RestClient rcClient = new RestClient(sUrl);
             RestRequest request = new RestRequest();
@@ -30,6 +28,10 @@ namespace ESUNTest_API.Controllers
             IRestResponse<List<mF_D0047_61>> response = rcClient.Execute<List<mF_D0047_61>>(request);
 
             mF_D0047_61 oData = JsonConvert.DeserializeObject<mF_D0047_61>(response.Content.ToString());
+
+            // BAL
+
+            // DAL
 
             return Ok(oData);
         } 
