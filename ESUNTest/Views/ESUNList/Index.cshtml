@@ -1,0 +1,20 @@
+﻿@model ESUNTest.Models.F_D0047_61.VMF_D0047_61
+
+<h3>@Model.sDatasetDescription</h3>
+<h3>@Model.sLocationsName</h3>
+<h3>@Model.sLocationName</h3>
+<h3>@Model.sDescription</h3>
+
+<table>
+    <tr>
+        <th>dataTime</th>
+        <th>value</th>
+    </tr>
+    @for (var i = 0; i < Model.lTimes.Count; i++)
+    {
+        <tr>
+            <td>@Model.lTimes[i].sDataTime</td>
+            <td>@Model.lTimes[i].sValue</td>
+        </tr>
+    }
+</table>
