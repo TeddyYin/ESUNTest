@@ -259,11 +259,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-/ESUNTest.sln
-/ESUNTest/Web.Release.config
-/ESUNTest/Web.Debug.config
-/ESUNTest/Web.config
-/ESUNTest/App_Data/Logs/
-/ESUNTest/Upload/
-/ESUNTest/Properties/PublishProfiles/CustomProfile.pubxml
-/ESUNTest/ESUNTest.csproj
+
